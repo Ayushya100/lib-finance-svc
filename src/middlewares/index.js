@@ -2,6 +2,6 @@
 
 import errorHandler from './errorHandler.middleware.js';
 
-export default {
+export {
     errorHandler
 };
