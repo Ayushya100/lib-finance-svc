@@ -27,6 +27,24 @@ import {
     errorHandler
 } from './src/middlewares/index.js';
 
+import {
+    UserModel,
+    UserMetadataModel,
+    ServiceRoutesModel,
+    ServiceConfigModel,
+    UserRoleModel,
+    RoleScopeModel,
+    DashboardSettingsModel,
+    UserDashboardModel,
+    UserFinanceModel,
+    UserAccountModel,
+    UserCardsModel,
+    PaymentMethodsModel,
+    UserTagsModel,
+    WalletCategoryModel,
+    UserTransactionsModel
+} from './src/models/index.js';
+
 export {
     dbConnection,
     responseCodes,
@@ -38,5 +56,20 @@ export {
     logger,
     ServiceConnection,
     Router,
-    errorHandler
+    errorHandler,
+    UserModel,
+    UserMetadataModel,
+    ServiceRoutesModel,
+    ServiceConfigModel,
+    UserRoleModel,
+    RoleScopeModel,
+    DashboardSettingsModel,
+    UserDashboardModel,
+    UserFinanceModel,
+    UserAccountModel,
+    UserCardsModel,
+    PaymentMethodsModel,
+    UserTagsModel,
+    WalletCategoryModel,
+    UserTransactionsModel
 };
