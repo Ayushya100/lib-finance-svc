@@ -54,7 +54,7 @@ const userCardsSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    color: {
+    metadata: {
         type: String,
         required: false
     },

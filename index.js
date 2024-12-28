@@ -6,7 +6,24 @@ dotevn.config({
     path: './.env'
 });
 
-import { dbConnection } from './src/db/index.js';
+import {
+    dbConnection,
+    DashboardSettingTemplate,
+    ServiceConfigTemplate,
+    ServiceRoutesTemplate,
+    UserRoleTemplate,
+    RoleScopeTemplate,
+    UserTemplate,
+    UserMetadataTemplate,
+    UserDashboardTemplate,
+    UserFinanceTemplate,
+    UserAccountTemplate,
+    UserCardsTemplate,
+    PaymentMethodsTemplate,
+    UserTagsTemplate,
+    WalletCategoryTemplate,
+    UserTransactionsTemplate
+} from './src/db/index.js';
 
 import { responseCodes, responseMessage } from './src/assets/response/response-codes.js';
 
@@ -71,5 +88,20 @@ export {
     PaymentMethodsModel,
     UserTagsModel,
     WalletCategoryModel,
-    UserTransactionsModel
+    UserTransactionsModel,
+    DashboardSettingTemplate,
+    ServiceConfigTemplate,
+    ServiceRoutesTemplate,
+    UserRoleTemplate,
+    RoleScopeTemplate,
+    UserTemplate,
+    UserMetadataTemplate,
+    UserDashboardTemplate,
+    UserFinanceTemplate,
+    UserAccountTemplate,
+    UserCardsTemplate,
+    PaymentMethodsTemplate,
+    UserTagsTemplate,
+    WalletCategoryTemplate,
+    UserTransactionsTemplate
 };
