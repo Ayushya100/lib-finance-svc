@@ -12,7 +12,8 @@ import {
     ApiError,
     ApiResponse,
     buildApiError,
-    buildApiResponse
+    buildApiResponse,
+    logger
 } from './src/utils/index.js';
 
 export {
@@ -21,5 +22,6 @@ export {
     ApiError,
     ApiResponse,
     buildApiError,
-    buildApiResponse
+    buildApiResponse,
+    logger
 };
