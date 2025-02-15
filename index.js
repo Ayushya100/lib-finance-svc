@@ -16,6 +16,8 @@ import {
     logger
 } from './src/utils/index.js';
 
+import { db } from './src/db/index.js';
+
 export {
     responseCodes,
     responseMessage,
@@ -23,5 +25,6 @@ export {
     ApiResponse,
     buildApiError,
     buildApiResponse,
-    logger
+    logger,
+    db
 };
