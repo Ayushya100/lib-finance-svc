@@ -1,0 +1,23 @@
+{
+  "name": "lib-finance-svc",
+  "version": "1.0.0",
+  "description": "Welcome to the GitHub repository for **Finance Tracker Helper Library** - A collection of common functions and utilities for managing expenses, investments, and incomes in wallet-watcher projects. It aims to provide a set of reusable components to streamline the development of the application by handling common tasks such as data validation, calculations, and storage.\r ## Project Status: Under Development\r ### What's Happening Now:\r - The library is currently being developed to support the common functionalities between services such as token validations, error handler, logging functionality and various other.  \r ### Documentation\r - **DB Model Documentation:** [Finance Tracker DB Model](https://app.eraser.io/workspace/zBSna17oY9NoSl0HFqjh?origin=share)\r ---\r **Finance Tracker** - Simplifying Financial Management for Everyone!",
+  "type": "module",
+  "main": "index.js",
+  "keywords": [
+    "Javascript",
+    "node.js",
+    "expressJS",
+    "finance-tracker"
+  ],
+  "author": "Ayushya Jaiswal",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^11.0.5",
+    "winston": "^3.17.0"
+  }
+}
