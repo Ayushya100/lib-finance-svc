@@ -66,7 +66,8 @@ ServiceConnection.prototype.testConnection = async function() {
 
     while (retry < retries) {
         try {
-            response = await axios.get(`${PROTOCOL}://${HOST}:${PORT}/${serviceName}/api/v1.0/heath`, {
+            const API = `${PROTOCOL}://${HOST}:${PORT}/${serviceName}/api/v1.0/health`;
+            response = await axios.get(API, {
                 timeout: timeout
             });
             break;
