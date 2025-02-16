@@ -1,12 +1,14 @@
 'use strict';
 
 import { drizzle } from 'drizzle-orm/node-postgres';
-import { Pool } from 'pg';
+import pkg from 'pg';
 import dotenv from 'dotenv';
 
 dotenv.config({
     path: './env'
 });
+
+const { Pool } = pkg;
 
 const pool = new Pool({
     host: process.env.DB_HOST,
