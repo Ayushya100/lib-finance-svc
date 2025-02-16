@@ -18,6 +18,11 @@ import {
 
 import { db } from './src/db/index.js';
 
+import {
+    ServiceConnection,
+    Router
+} from './src/templates/index.js';
+
 export {
     responseCodes,
     responseMessage,
@@ -26,5 +31,7 @@ export {
     buildApiError,
     buildApiResponse,
     logger,
-    db
+    db,
+    ServiceConnection,
+    Router
 };
