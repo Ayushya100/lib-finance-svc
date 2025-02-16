@@ -23,6 +23,8 @@ import {
     Router
 } from './src/templates/index.js';
 
+import { errorHandler } from './src/middlewares/index.js';
+
 export {
     responseCodes,
     responseMessage,
@@ -33,5 +35,6 @@ export {
     logger,
     db,
     ServiceConnection,
-    Router
+    Router,
+    errorHandler
 };
