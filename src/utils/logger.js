@@ -31,7 +31,7 @@ const customLevel = {
 const buildTransporter = () => {
     return [
         new winston.transports.Console({
-            level: 'debug',
+            level: 'success',
             handleExceptions: true,
             json: false,
             colorize: true
