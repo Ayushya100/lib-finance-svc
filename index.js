@@ -16,7 +16,7 @@ import {
     logger
 } from './src/utils/index.js';
 
-import { db } from './src/db/index.js';
+import { exec } from './src/db/index.js';
 
 import {
     ServiceConnection,
@@ -34,7 +34,7 @@ export {
     buildApiError,
     buildApiResponse,
     logger,
-    db,
+    exec,
     ServiceConnection,
     Router,
     Controller,
