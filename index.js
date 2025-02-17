@@ -20,7 +20,8 @@ import { db } from './src/db/index.js';
 
 import {
     ServiceConnection,
-    Router
+    Router,
+    Controller
 } from './src/templates/index.js';
 
 import { errorHandler } from './src/middlewares/index.js';
@@ -36,5 +37,6 @@ export {
     db,
     ServiceConnection,
     Router,
+    Controller,
     errorHandler
 };

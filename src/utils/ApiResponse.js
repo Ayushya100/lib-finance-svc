@@ -16,12 +16,14 @@ class ApiResponse {
         statusCode,
         type,
         data,
-        message = 'SUCCESS'
+        message = 'Success',
+        devMessage = 'SUCCESS'
     ) {
         this.statusCode = statusCode;
         this.type = type;
         this.data = data;
         this.message = message;
+        this.devMessage = devMessage;
         this.success = statusCode < 400;
     }
 }
@@ -38,6 +40,7 @@ const buildApiResponse = (res) => {
         res.resCode || 400,
         responseCodes[res.resCode],
         res.data || [],
+        res.resMsg,
         responseMessage[res.resCode]
     );
 
