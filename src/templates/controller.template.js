@@ -3,12 +3,12 @@
 import { logger } from '../utils/index.js';
 
 /*
-* Router class to log incoming request details.
-* @param {string} header - the name of the router.
+* Controller class to log incoming operation details.
+* @param {string} header - the name of the controller.
 * @returns {} - returns nothing.
 */
 
-class Router {
+class Controller {
     constructor(header) {
         this.header = header;
 
@@ -16,38 +16,20 @@ class Router {
         msg = msg.length > 0 ? msg.map((word) => {
             return word.charAt(0).toUpperCase() + word.slice(1)
         }).join(' ') : msg;
-        msg = `${msg} Router started.`;
+        msg = `${msg} Controller started.`;
 
-        this.log = logger(`Router : ${this.header}`);
+        this.log = logger(`Controller : ${this.header}`);
         this.msg = msg;
     }
 }
 
 /*
-* Logs incoming request details.
-* @param {Object} req - the request object.
-* @returns {} - returns nothing.
-*/
-
-Router.prototype.logRequest = function(req) {
-    this.log.info(`Incoming request : ${req.method} - ${req.originalUrl}`);
-
-    if (Object.keys(req.params).length > 0) {
-        this.log.info(`Request parameters : ${JSON.stringify(req.params)}`);
-    }
-
-    if (Object.keys(req.query).length > 0) {
-        this.log.info(`Request query : ${JSON.stringify(req.query)}`);
-    }
-}
-
-/*
-* Logs router operation execution message.
+* Logs controller operation execution message.
 * @param {} - accepts nothing.
 * @returns {} - returns nothing.
 */
 
-Router.prototype.logMsg = function() {
+Controller.prototype.logMsg = function() {
     this.log.info(this.msg);
 }
 
@@ -58,7 +40,7 @@ Router.prototype.logMsg = function() {
 * @returns {} - returns nothing.
 */
 
-Router.prototype.logInfo = function(type, msg) {
+Controller.prototype.logInfo = function(type, msg) {
     if (type === 'info') {
         this.log.info(msg);
     } else if (type === 'debug') {
@@ -72,4 +54,4 @@ Router.prototype.logInfo = function(type, msg) {
     }
 }
 
-export { Router };
+export { Controller };
