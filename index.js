@@ -24,7 +24,10 @@ import {
     Controller
 } from './src/templates/index.js';
 
-import { errorHandler } from './src/middlewares/index.js';
+import {
+    errorHandler,
+    paramValidator
+} from './src/middlewares/index.js';
 
 export {
     responseCodes,
@@ -38,5 +41,6 @@ export {
     ServiceConnection,
     Router,
     Controller,
-    errorHandler
+    errorHandler,
+    paramValidator
 };
