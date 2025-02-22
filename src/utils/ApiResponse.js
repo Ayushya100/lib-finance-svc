@@ -37,11 +37,11 @@ class ApiResponse {
 
 const buildApiResponse = (res) => {
     const apiResponse = new ApiResponse(
-        res.resCode || 400,
-        responseCodes[res.resCode],
+        res.status || 400,
+        responseCodes[res.message],
         res.data || [],
-        res.resMsg,
-        responseMessage[res.resCode]
+        res.message,
+        responseMessage[res.message]
     );
 
     return apiResponse;

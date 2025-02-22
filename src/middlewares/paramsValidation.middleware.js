@@ -17,8 +17,8 @@ const paramValidator = async(req, res, next) => {
                 if (uuid.length !== 38) {
                     log.error(`Invalid ${key} length passed to the api call`);
                     return next({
-                        resCode: 400,
-                        resMsg: `Invalid ${key} format.`,
+                        status: 400,
+                        message: `Invalid ${key} format.`,
                         isValid: false
                     });
                 }
@@ -28,8 +28,8 @@ const paramValidator = async(req, res, next) => {
                 if (!(/^[A-F0-9]{32}$/.test(uuid))) {
                     log.error(`Invalid UUID format provided for ${key}.`);
                     return next({
-                        resCode: 400,
-                        resMsg: `Invalid UUID format provided for ${key}.`,
+                        status: 400,
+                        message: `Invalid UUID format provided for ${key}.`,
                         isValid: false
                     });
                 }
@@ -41,8 +41,8 @@ const paramValidator = async(req, res, next) => {
     } catch (err) {
         log.error(`Error occurred while validating passed parameters to the api. Error : ${err}`);
         next({
-            resCode: 500,
-            resMsg: 'Error occurred while validating the passed parameters to the api.',
+            status: 500,
+            message: 'Error occurred while validating the passed parameters to the api.',
             stack: err.stack,
             isValid: false
         });
