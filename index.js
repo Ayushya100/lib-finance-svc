@@ -21,7 +21,8 @@ import { exec } from './src/db/index.js';
 import {
     ServiceConnection,
     Router,
-    Controller
+    Controller,
+    App
 } from './src/templates/index.js';
 
 import {
@@ -42,5 +43,6 @@ export {
     Router,
     Controller,
     errorHandler,
-    paramValidator
+    paramValidator,
+    App
 };
